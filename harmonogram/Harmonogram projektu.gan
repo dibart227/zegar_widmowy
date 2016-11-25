@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Zegar Widmowy" company="Grupa Manczarskiego" webLink="http://" view-date="2016-11-20" view-index="0" gantt-divider-location="605" resource-divider-location="300" version="2.8.1" locale="en_US">
+    <description><![CDATA[Harmonobram budowy Zegara Widmowego, przez grupę Manczarskiego należącą do koła naukowego Politechniki Gdańskiej NKSE]]></description>
+    <view zooming-state="default:7" id="gantt-chart">
+        <field id="tpd3" name="Name" width="462" order="0"/>
+        <field id="tpd4" name="Begin date" width="68" order="1"/>
+        <field id="tpd5" name="End date" width="56" order="2"/>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="104" name="Zaprezentowanie planów na forum koła naukowego NKSE" color="#8cb6ce" meeting="false" start="2016-11-21" duration="1" complete="0" priority="2" expand="true">
+            <depend id="0" type="2" difference="0" hardness="Strong"/>
+            <depend id="14" type="2" difference="0" hardness="Strong"/>
+            <depend id="23" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="0" name="Analiza projektu z serwisu elektroda.pl" color="#8cb6ce" meeting="false" start="2016-11-22" duration="1" complete="0" expand="true">
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+            <depend id="28" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="1" name="Zdobycie silników" color="#8cb6ce" meeting="false" start="2016-11-23" duration="10" complete="0" expand="true">
+            <depend id="13" type="2" difference="0" hardness="Strong"/>
+            <task id="5" name="Wywiad dostępnych źródeł zdobycia silników" color="#8cb6ce" meeting="false" start="2016-11-23" duration="2" complete="0" expand="true">
+                <depend id="7" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="7" name="Porównanie źródeł zdobycia silników" color="#8cb6ce" meeting="false" start="2016-11-25" duration="1" complete="0" expand="true">
+                <depend id="9" type="2" difference="0" hardness="Strong"/>
+                <depend id="11" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="9" name="Kupno silników" color="#8cb6ce" meeting="false" start="2016-11-28" duration="7" complete="0" expand="true"/>
+        </task>
+        <task id="11" name="Zapoznanie się ze specyfikacją poszczególnych elementów elektronicznych" color="#8cb6ce" meeting="false" start="2016-11-28" duration="14" complete="0" expand="true">
+            <depend id="12" type="2" difference="0" hardness="Strong"/>
+            <depend id="14" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="12" name="Przygotowanie schematu elektronicznego" color="#8cb6ce" meeting="false" start="2016-12-16" duration="7" complete="0" expand="true">
+            <depend id="14" type="2" difference="0" hardness="Strong"/>
+            <depend id="26" type="2" difference="0" hardness="Strong"/>
+            <depend id="202" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="13" name="Tworzenie projektu obudowy" color="#8cb6ce" meeting="false" start="2016-12-07" duration="7" complete="0" expand="true">
+            <depend id="16" type="2" difference="0" hardness="Strong"/>
+            <depend id="63" type="2" difference="0" hardness="Strong"/>
+            <depend id="202" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="202" name="Dopracowanie kosztorysu" color="#8cb6ce" meeting="false" start="2016-12-27" duration="1" complete="0" expand="true">
+            <depend id="203" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="203" name="Kupno potrzebnych elementów" color="#8cb6ce" meeting="false" start="2016-12-28" duration="7" complete="0" expand="true">
+            <depend id="18" type="2" difference="0" hardness="Strong"/>
+            <depend id="63" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="14" name="Tworzenie płytki PCB" color="#000000" meeting="false" start="2016-12-27" duration="20" complete="0" expand="true">
+            <depend id="63" type="2" difference="0" hardness="Rubber"/>
+            <depend id="64" type="2" difference="0" hardness="Strong"/>
+            <task id="16" name="Projektowanie płytki PCB" color="#8cb6ce" meeting="false" start="2016-12-27" duration="7" complete="0" expand="true"/>
+            <task id="18" name="Wytrawianie płytki PCB" color="#8cb6ce" meeting="false" start="2017-01-06" duration="2" complete="0" expand="true">
+                <depend id="19" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="19" name="Test ścieżek (przeciw zwarciowy)" color="#8cb6ce" meeting="false" start="2017-01-10" duration="1" complete="0" expand="true">
+                <depend id="20" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="20" name="Przylutowanie elementów elektronicznych" color="#8cb6ce" meeting="false" start="2017-01-11" duration="2" complete="0" expand="true">
+                <depend id="21" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="21" name="Test działania elektroniki" color="#8cb6ce" meeting="false" start="2017-01-13" duration="7" complete="0" expand="true"/>
+        </task>
+        <task id="22" name="Połączenie elektroniki z obudową" color="#000000" meeting="false" start="2017-01-24" duration="5" complete="0" expand="true">
+            <depend id="28" type="2" difference="0" hardness="Strong"/>
+            <task id="63" name="Budowa obudowy" color="#8cb6ce" meeting="false" start="2017-01-24" duration="3" complete="0" expand="true">
+                <depend id="64" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="64" name="Zamontowanie elektroniki do obudowy" color="#8cb6ce" meeting="false" start="2017-01-27" duration="2" complete="0" expand="true">
+                <depend id="28" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="23" name="Projektowanie układu" color="#000000" meeting="false" start="2016-11-22" duration="52" complete="0" expand="true">
+            <depend id="30" type="2" difference="0" hardness="Strong"/>
+            <task id="25" name="Nauka programowania mikrokontrolerów AVR w języku C" color="#8cb6ce" meeting="false" start="2016-11-22" duration="20" complete="0" expand="true">
+                <depend id="26" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="26" name="Tworzenie oprogramowania zegara" color="#8cb6ce" meeting="false" start="2016-12-27" duration="10" complete="0" expand="true">
+                <depend id="27" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="27" name="Test oprogramowania" color="#8cb6ce" meeting="false" start="2017-01-10" duration="1" complete="0" expand="true">
+                <depend id="28" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="28" name="Zaprogramowanie układu" color="#8cb6ce" meeting="false" start="2017-01-31" duration="1" complete="0" expand="true">
+                <depend id="29" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="29" name="Test urządzenia" color="#8cb6ce" meeting="false" start="2017-02-01" duration="1" complete="0" expand="true"/>
+        </task>
+        <task id="30" name="Analiza błędów" color="#8cb6ce" meeting="false" start="2017-02-02" duration="3" complete="0" expand="true">
+            <depend id="31" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="31" name="Naprawa błędów" color="#8cb6ce" meeting="false" start="2017-02-07" duration="7" complete="0" expand="true">
+            <depend id="32" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="32" name="Zaprezentowanie urządzenia na forum koła naukowego NKSE" color="#8cb6ce" meeting="false" start="2017-02-16" duration="1" complete="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Bartosz Błyskal" function="Default:0" contacts="dibart227@gmail.com" phone="795200867"/>
+        <resource id="1" name="Emilia Majewska" function="Default:0" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="1" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="0" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="5" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="7" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="25" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="11" resource-id="0" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="12" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="14" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="22" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="23" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="30" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="31" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="32" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="0" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="5" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="7" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="25" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="11" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="12" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="13" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="14" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="22" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="23" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="30" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="31" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="32" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="104" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations>
+        <vacation start="2016-11-21" end="2016-11-22" resourceid="0"/>
+        <vacation start="2016-11-21" end="2016-11-22" resourceid="1"/>
+    </vacations>
+    <previous/>
+    <roles roleset-name="Default"/>
+</project>
